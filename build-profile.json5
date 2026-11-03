@@ -1,0 +1,56 @@
+{
+  app: {
+    signingConfigs: [
+      {
+        name: 'default',
+        type: 'HarmonyOS',
+        material: {
+          certpath: 'C:\\Users\\Su-Qi\\.ohos\\config\\default_Harmtwo2_2zOyB5ZFnFCp5YI0sk9ySFMfJlosvxWeLKdM3Hy0g0=.cer',
+          keyAlias: 'debugKey',
+          keyPassword: '0000001b3ce82551c46355f11a45443b3127d68bec311ae1fd63429fd0fce01dfff6809b48391ebc2fca57',
+          profile: 'C:\\Users\\Su-Qi\\.ohos\\config\\default_Harmtwo2_2zOyB5ZFnFCp5YI0sk9ySFMfJlosvxWeLKdM3Hy0g0=.p7b',
+          signAlg: 'SHA256withECDSA',
+          storeFile: 'C:\\Users\\Su-Qi\\.ohos\\config\\default_Harmtwo2_2zOyB5ZFnFCp5YI0sk9ySFMfJlosvxWeLKdM3Hy0g0=.p12',
+          storePassword: '0000001b3ce82551c46355f11a45443b3127d68bec311ae1fd63429fd0fce01dfff6809b48391ebc2fca57',
+        },
+      },
+    ],
+    products: [
+      {
+        name: 'default',
+        signingConfig: 'default',
+        compatibleSdkVersion: '5.0.2(14)',
+        runtimeOS: 'HarmonyOS',
+        buildOption: {
+          strictMode: {
+            caseSensitiveCheck: true,
+            useNormalizedOHMUrl: true,
+          },
+        },
+        targetSdkVersion: '6.0.1(21)',
+      },
+    ],
+    buildModeSet: [
+      {
+        name: 'debug',
+      },
+      {
+        name: 'release',
+      },
+    ],
+  },
+  modules: [
+    {
+      name: 'entry',
+      srcPath: './entry',
+      targets: [
+        {
+          name: 'default',
+          applyToProducts: [
+            'default',
+          ],
+        },
+      ],
+    },
+  ],
+}

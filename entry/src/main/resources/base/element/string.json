@@ -1,0 +1,271 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+
+    {
+      "name": "welcome_page_title",
+      "value": "欢迎页"
+    },
+    {
+      "name": "privacy_agreement_title",
+      "value": "用户隐私协议"
+    },
+    {
+      "name": "privacy_agreement_content",
+      "value": "我们尊重并保护您的个人隐私..."
+    },
+    {
+      "name": "agree_button_text",
+      "value": "同意"
+    },
+    {
+      "name": "disagree_button_text",
+      "value": "不同意"
+    },
+    {
+      "name": "app_name",
+      "value": "健康应用"
+    },
+
+
+    {
+      "name": "privacy_title",
+      "value": "用户协议与隐私政策"
+    },
+    {
+      "name": "privacy_section1",
+      "value": "我们严格遵守"
+    },
+
+    {
+      "name": "privacy_section11",
+      "value": "《个人信息保护法》"
+    },
+    {
+      "name": "privacy_section12",
+      "value": "仅收集实现智能家居控制功能所必需的信息..."
+    },
+
+    {
+      "name": "privacy_section2",
+      "value": "设备数据采集范围包括：温湿度传感器读数、设备操作记录、安防事件日志..."
+    },
+    {
+      "name": "privacy_section3",
+      "value": "用户权利：您随时可以通过【账号设置-数据管理】查看或删除您的历史数据..."
+    },
+    {
+      "name": "privacy_agreeAll",
+      "value": "同意全部条款"
+    },
+    {
+      "name": "privacy_readAccept",
+      "value": "已阅读并同意《用户协议》"
+    },
+
+
+
+
+
+    {
+      "name": "home_title",
+      "value": "智能家居控制中心"
+    },
+    {
+      "name": "home_currentScene",
+      "value": "当前场景模式：{0}"
+    },
+    {
+      "name": "home_scene_home",
+      "value": "回家模式"
+    },
+    {
+      "name": "home_scene_sleep",
+      "value": "睡眠模式"
+    },
+    {
+      "name": "home_scene_away",
+      "value": "外出模式"
+    },
+    {
+      "name": "home_addDevice",
+      "value": "添加智能设备"
+    },
+    {
+      "name": "home_deviceStatus",
+      "value": "{0} · {1}"
+    },
+    {
+      "name": "home_status_connected",
+      "value": "已连接"
+    },
+    {
+      "name": "home_status_disconnected",
+      "value": "离线"
+    },
+    {
+      "name": "security_title",
+      "value": "家庭安防系统"
+    },
+    {
+      "name": "security_unlockMethods",
+      "value": "开锁方式"
+    },
+    {
+      "name": "security_nfcSettings",
+      "value": "NFC门禁卡设置"
+    },
+    {
+      "name": "security_nfcBindTip",
+      "value": "请将卡片贴近手机背部"
+    },
+    {
+      "name": "security_faceRecognition",
+      "value": "人脸识别"
+    },
+    {
+      "name": "security_faceRegister",
+      "value": "录入面部信息"
+    },
+    {
+      "name": "security_alarmNotification",
+      "value": "⚠️ 检测到异常开锁行为！"
+    },
+    {
+      "name": "lighting_title",
+      "value": "智能灯光控制"
+    },
+    {
+      "name": "lighting_switch",
+      "value": "开关"
+    },
+    {
+      "name": "lighting_brightness",
+      "value": "亮度调节"
+    },
+    {
+      "name": "lighting_autoMode",
+      "value": "智能模式"
+    },
+    {
+      "name": "lighting_autoCondition",
+      "value": "当{0}且光照低于{1}%时自动开灯"
+    },
+    {
+      "name": "environment_title",
+      "value": "环境监测"
+    },
+    {
+      "name": "environment_temperature",
+      "value": "温度：{0}℃"
+    },
+    {
+      "name": "environment_humidity",
+      "value": "湿度：{1}%"
+    },
+    {
+      "name": "environment_comfortLevel",
+      "value": "体感：{0}"
+    },
+    {
+      "name": "environment_status_comfort",
+      "value": "舒适"
+    },
+    {
+      "name": "environment_status_highTemp",
+      "value": "温度过高"
+    },
+    {
+      "name": "environment_status_lowHumidity",
+      "value": "湿度过低"
+    },
+    {
+      "name": "environment_suggestion",
+      "value": "建议：{0}"
+    },
+    {
+      "name": "environment_suggest_ac",
+      "value": "打开空调调节温度"
+    },
+    {
+      "name": "environment_suggest_humidifier",
+      "value": "启动加湿器"
+    },
+    {
+      "name": "fireAlert_title",
+      "value": "火情预警"
+    },
+    {
+      "name": "fireAlert_emergencyAlert",
+      "value": "🔥 检测到火情！立即处理！"
+    },
+    {
+      "name": "fireAlert_falseAlarm",
+      "value": "误报处理"
+    },
+    {
+      "name": "fireAlert_alarmConfirm",
+      "value": "我已确认现场安全"
+    },
+    {
+      "name": "settings_title",
+      "value": "系统设置"
+    },
+    {
+      "name": "settings_deviceManagement",
+      "value": "设备管理"
+    },
+    {
+      "name": "settings_sceneConfig",
+      "value": "场景配置"
+    },
+    {
+      "name": "settings_systemExtend",
+      "value": "扩展设备"
+    },
+    {
+      "name": "settings_newDeviceTip",
+      "value": "发现新设备：{0}"
+    },
+    {
+      "name": "common_confirm",
+      "value": "确定"
+    },
+    {
+      "name": "common_cancel",
+      "value": "取消"
+    },
+    {
+      "name": "common_loading",
+      "value": "加载中..."
+    },
+    {
+      "name": "common_retry",
+      "value": "重试"
+    },
+    {
+      "name": "common_errorNetwork",
+      "value": "网络连接异常"
+    },
+    {
+      "name": "access_bluetooth_reason",
+      "value": "用于扫描和连接智能设备蓝牙，进行设备配网"
+    }
+
+
+
+
+
+  ]
+}
