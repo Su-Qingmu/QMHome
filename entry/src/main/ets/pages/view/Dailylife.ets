@@ -1,6 +1,4 @@
 // view/Dailylife.ets
-import router from '@ohos.router';
-
 @Entry
 @Component
 export default struct Dailylife {

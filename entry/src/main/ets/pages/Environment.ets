@@ -1,5 +1,4 @@
 // Environment.ets
-import { router } from '@kit.ArkUI';
 import {Server} from '../tools/server'
 
 
@@ -43,7 +42,7 @@ export default struct Environment {
           .height(24)
           .margin({ right: 12 })
           .onClick(() => {
-            router.back()
+            this.getUIContext().getRouter().back()
           })
         Text('环境监测')
           .fontSize(20)

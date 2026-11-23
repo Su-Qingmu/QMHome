@@ -1,8 +1,7 @@
 // Smokealarm.ets
-import { router } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
-import { SmokePrivacy } from '../entryability/SmokePrivacy';
+import { SmokePrivacy } from './components/SmokePrivacy';
 import { Server } from  '../tools/server'
 
 @Entry
@@ -22,7 +21,7 @@ export default struct Smokealarm {
             .height(24)
             .margin({ left: 16, right: 16 })
             .onClick(() => {
-              router.back();
+              this.getUIContext().getRouter().back();
             })
 
           Text('烟雾报警传感器')

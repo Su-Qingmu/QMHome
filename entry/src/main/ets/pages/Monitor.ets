@@ -1,4 +1,3 @@
-import { router } from '@kit.ArkUI'
 import { Server } from  '../tools/server'
 
 
@@ -26,7 +25,7 @@ export default struct Monitors {
           .height(24)
           .margin({ right: 12 })
           .onClick(() => {
-            router.back()
+            this.getUIContext().getRouter().back()
           })
         Text('门锁监控')
           .fontSize(20)

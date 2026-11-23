@@ -1,5 +1,4 @@
 // Facility.ets
-import { router } from '@kit.ArkUI';  // 导入ArkUI的路由功能
 import { BusinessError } from '@kit.BasicServicesKit';  // 导入基础服务错误类型
 import { hilog } from '@kit.PerformanceAnalysisKit';  // 导入性能分析日志功能
 
@@ -79,8 +78,8 @@ export default struct Facility {  // 定义一个名为Facility的组件
             this.deviceItem($r('app.media.ic_lamp'), '灯光', '暂无灯光设备')  // 调用deviceItem方法创建灯光设备项
           }
           .onClick(() => {  // 设置点击事件
-            router.pushUrl({  // 路由跳转
-              url: 'pages/test2'  // 跳转到灯光页面
+            this.getUIContext().getRouter().pushUrl({
+              url: 'pages/Light'  // 跳转到灯光页面
             }).catch((err: BusinessError) => {  // 捕获错误
               hilog.error(0x0000, 'Facility', '跳转失败: ' + JSON.stringify(err));  // 记录错误日志
             });
@@ -92,7 +91,7 @@ export default struct Facility {  // 定义一个名为Facility的组件
             this.deviceItem($r('app.media.ic_leaf'), '环境', '暂无环境信息')  // 调用deviceItem方法创建环境设备项
           }
           .onClick(() => {  // 设置点击事件
-            router.pushUrl({  // 路由跳转
+            this.getUIContext().getRouter().pushUrl({
               url: 'pages/Environment'  // 跳转到环境页面
             }).catch((err: BusinessError) => {  // 捕获错误
               hilog.error(0x0000, 'Facility', '跳转到环境页面失败: ' + JSON.stringify(err));  // 记录错误日志
@@ -105,7 +104,7 @@ export default struct Facility {  // 定义一个名为Facility的组件
             this.deviceItem($r('app.media.ic_camera'), '门锁监控', '查看门锁状态')  // 调用deviceItem方法创建门锁监控项
           }
           .onClick(() => {  // 设置点击事件
-            router.pushUrl({  // 路由跳转
+            this.getUIContext().getRouter().pushUrl({
               url: 'pages/Monitor'  // 跳转到监控页面
             }).catch((err: BusinessError) => {  // 捕获错误
               hilog.error(0x0000, 'Facility', '跳转到门锁监控页面失败: ' + JSON.stringify(err));  // 记录错误日志
@@ -118,7 +117,7 @@ export default struct Facility {  // 定义一个名为Facility的组件
             this.deviceItem($r('app.media.ic_somkebell'), '烟雾报警传感器', '设备数1')  // 调用deviceItem方法创建烟雾报警项
           }
           .onClick(() => {  // 设置点击事件
-            router.pushUrl({  // 路由跳转
+            this.getUIContext().getRouter().pushUrl({
               url: 'pages/Smokealarm'  // 跳转到烟雾报警页面
             }).catch((err: BusinessError) => {  // 捕获错误
               hilog.error(0x0000, 'Facility', '跳转到烟雾报警页面失败: ' + JSON.stringify(err));  // 记录错误日志

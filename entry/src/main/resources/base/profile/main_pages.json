@@ -4,9 +4,6 @@
     "pages/Light",
     "pages/Environment",
     "pages/Smokealarm",
-    "pages/test",
-    "pages/test2",
-    "pages/Monitor",
-    "pages/receDataTest"
+    "pages/Monitor"
   ]
 }

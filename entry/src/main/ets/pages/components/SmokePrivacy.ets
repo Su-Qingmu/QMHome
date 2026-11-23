@@ -1,7 +1,4 @@
-// SmokePrivacy.axkts
-import { BusinessError } from '@kit.BasicServicesKit';
-import { promptAction } from '@kit.ArkUI';
-
+// components/SmokePrivacy.ets — 烟雾报警隐私弹窗
 @Component
 export struct SmokePrivacy {
   @Prop showAlert: boolean = false; // 由父组件控制显示
@@ -45,8 +42,7 @@ export struct SmokePrivacy {
         .height(45)
         .backgroundColor(Color.Red)
         .onClick(() => {
-          this.showAlert = true;
-          // 这里可以添加其他处理逻辑
+          this.showAlert = false;
         })
     }
     .width('80%')
