@@ -36,3 +36,9 @@ HarmonyOS (ArkTS) single-module app. Smart-home / IoT style UI (devices, lights,
 ## Permissions & runtime
 
 - Network (`@kit.NetworkKit` socket) and Bluetooth code requires the permissions above plus a real device for end-to-end verification. TCP defaults (`tcpAddress: ''`, `tcpPort: 80`) are placeholders — real target IP/port are entered in the UI at runtime.
+
+## Related repo: SCI (paper experiment)
+
+- `https://github.com/Su-Qingmu/SCI` (branch `SCI-EXP`, private) is a security-focused SCI-paper experiment repo built on this app. Topology: HarmonyOS app → Raspberry Pi gateway (`lscf_gateway`/`raspberry_pi`) → ESP32 fleet; Python LSCF framework (HMAC-SHA256 + ECC-P256/ECDH + ChaCha20 + replay guard) plus plain-TCP vs mTLS comparison experiments (`experiments/`, `HarmonyAPP`).
+- The main project is the authoritative implementation. When protocol/format changes are made here, the SCI repo's gateway + ESP32 + experiment clients must be kept consistent (and vice versa: validated protocol work from SCI gets ported back here).
+- Ported into this project (2026-11): `tools/GatewayClient.ets` + `tools/GatewayModels.ets` (dual-mode plain-TCP/mTLS client, newline-framed JSON, requestId matching, talks to `lscf_gateway/harmony_gateway.py` on 18080 plain / 18443 mTLS) and `tools/TlsCredentials.ets` (placeholder mTLS certs — generated locally by the SCI repo's `generate_mtls_pki.py`, never commit real cert/key values).
